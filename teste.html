@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <title>Meu Cartão de Perfil</title>
     <style>
-        
         body {
             font-family: sans-serif;
-    
             background-color: #f4f4f4; 
             display: flex;
             justify-content: center;
@@ -16,37 +14,51 @@
             margin: 0;
         }
 
-        
         .card {
             background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 50px; /* Mais espaço interno */
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
             text-align: center;
-            width: 250px;
+            width: 450px; /* Largura significativamente maior */
         }
 
-        .foto {
-            width: 100px;
-            height: 100px;
-            background-color: #ddd;
+        .card img {
+            width: 200px; /* Imagem bem maior */
+            height: 200px;
             border-radius: 50%;
-            margin: 0 auto 15px;
-            display: block;
+            object-fit: cover;
+            margin-bottom: 25px;
+            background-color: #ddd;
+            border: 5px solid #f0f0f0; /* Adicionado um contorno para destaque */
+        }
+
+        h2 {
+            font-size: 2rem; /* Nome maior */
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.2rem; /* Profissão maior */
+            color: #666;
+            margin-bottom: 30px;
         }
 
         button {
             background-color: #2ecc71;
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px 40px; /* Botão bem mais largo e alto */
+            border-radius: 8px;
             cursor: pointer;
             font-weight: bold;
+            font-size: 18px; /* Texto do botão maior */
+            transition: transform 0.2s; /* Efeito suave */
         }
 
         button:hover {
             background-color: #27ae60;
+            transform: scale(1.05); /* Pequeno zoom no botão ao passar o mouse */
         }
     </style>
 </head>
@@ -54,7 +66,6 @@
 
     <div class="card">
         <img src="gato.png" alt="gato">
-        
         <h2 id="nomeUsuario">Lukas Cruz</h2>
         <p>Desenvolvedor Web</p>
         <button onclick="mostrarMensagem()">Clique Aqui</button>
